@@ -19,19 +19,37 @@
 <SellBlue>False</SellBlue>
 <SellPurple>False</SellPurple>
 
-    <Vendors>
-	<Vendor Name="Veetra the Tender" Entry="92069" Type="Repair" Nav="Fly" X="3527.068" Y="-763.809" Z="40.33562" />
-	<Vendor Name="Forika the Seer" Entry="93178" Type="Repair" Nav="Fly" X="4567.845" Y="360.5729" Z="221.1748" />
-    </Vendors>
-	
-    <Mailboxes>
-	<!--<GameObject Name="Mailbox" Entry="242796" X="3843.123" Y="-1341.004" Z="93.79218" /> //Alliance mailbox-->
-    </Mailboxes>
+   	 <Vendors>
+		<Vendor Name="Forika the Seer" Entry="93178" Type="Repair" Nav="Fly" X="4567.845" Y="360.5729" Z="221.1745" /> <!-- Neutral -->
+		<Vendor Name="Veetra the Tender" Entry="92069" Type="Repair" Nav="Fly" X="3527.068" Y="-763.809" Z="40.33412" /> <!-- Neutral -->
+		<Vendor Name="Thaesus" Entry="90977" Type="Repair" Nav="Fly" X="3823.288" Y="-1371.474" Z="95.44617" UsableWhen="Me.IsAlliance" /> <!-- Alliance -->
+		<Vendor Name="Rett Blasterhose" Entry="90994" Type="Repair" Nav="Fly" X="4326.587" Y="-1405.056" Z="71.38323" UsableWhen="Me.IsHorde" /> <!-- Horde -->
+		<Vendor Name="Shadow Hunter Denjai" Entry="96014" Type="Repair" Nav="Fly" X="4334.67" Y="-1529.712" Z="88.28191" UsableWhen="Me.IsHorde" /> <!-- Horde -->
+	</Vendors>
 
- <Blackspots>
-<Blackspot X="4237.032" Y="-34.95277" Z="65.96143" Radius="89.23098" />
+	<Mailboxes>
+		<Mailbox X="3843.123" Y="-1341.004" Z="93.79218" UsableWhen="Me.IsAlliance" />
+		<Mailbox X="4296.142" Y="-1482.004" Z="79.62183" UsableWhen="Me.IsHorde" />
+	</Mailboxes>
 
-  </Blackspots>
+	 <Blackspots>
+		<Blackspot X="4237.032" Y="-34.95277" Z="65.96143" Radius="89.23098" />
+		<Blackspot X="4809.82" Y="-214.9371" Z="3.513144" Radius="10.45735" /> <!-- Iron Horde Banner up on elevated location -->
+		<Blackspot X="3427.449" Y="119.8596" Z="159.9057" Radius="8.291213" /> <!-- Sargerei Soulcharger object, draws bot into elite mobs. -->
+ 	</Blackspots>
+
+	<ProtectedItems>
+		<Item Name="Fel-Proof Goggles" Id="128218" />
+	</ProtectedItems>
+
+	<Blacklist>
+		<Mob Name="Rasthe" Id="90782" Flags="Pull" />
+	</Blacklist>
+
+	<AvoidMobs>
+		<Mob Name="Rasthe" Entry="90782" />
+	</AvoidMobs>
+
 
 <Hotspots>
 <Hotspot X="3936.168" Y="-1185.834" Z="19.38265" />
